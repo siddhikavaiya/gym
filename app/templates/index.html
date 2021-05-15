@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+
+
+<main>
+    <br>
+    <!--? slider Area Start-->
+    <div class="slider-area position-relative">
+        <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-10">
+                            <div class="hero__caption">
+                                <span data-animation="fadeInLeft" data-delay="0.1s">Hi This is Gym Guide</span>
+                                <h1 data-animation="fadeInLeft" data-delay="0.4s">Gym Trainer</h1>
+                                <a href="courses.html" class="border-btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">My Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!-- Traning categories Start -->
+
+    <!-- Traning categories End-->
+    <!--? Team -->
+    <section class="team-area fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                        <h2 >What I Offer</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" >
+                        <div class="cat-icon">
+                            <img src="{% static 'assets/img/gallery/11.png' %}" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="{% url 'workout1' %}?cid=1">Cardio</a></h5>
+                            <p>Cardiovascular exercise, also known as cardio or aerobic exercise, is essential for good health. It gets your heart rate up, making you blood pump faster. This delivers more oxygen throughout your body, which keeps your heart and lungs healthy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="cat-icon">
+                            <img src="{% static 'assets/img/gallery/2.jpg' %}" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="{% url 'workout1' %}?cid=2">Yoga</a></h5>
+                            <p>Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <div class="cat-icon">
+                            <img src="{% static 'assets/img/gallery/3.png' %}" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="{% url 'workout1' %}?cid=3">Weight Loss</a></h5>
+                            <p>Weight loss, in the context of medicine, health, or physical fitness, refers to a reduction of the total body mass, by a mean loss of fluid, body fat, or lean mass. Weight loss can either occur unintentionally because of malnourishment or an underlying disease, or from a conscious effort to improve an actual or perceived overweight or obese state. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+    <!--? Gallery Area Start -->
+    <!-- Gallery Area End -->
+    <!-- Courses area start -->
+    <section class="pricing-area section-padding40 fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                        <h2>Membership</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="properties__card">
+                            <div class="about-icon">
+                                <img src="{% static 'assets/img/icon/price.svg' %}" alt="">
+                            </div>
+                            <div class="properties__caption">
+                                <span class="month">6 month</span>
+                                <p class="mb-25">&#8377 500/month <span>Cardio</span></p>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Home workout</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>No equipments Require</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Good for Heart</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Weight losing classes</p>
+                                    </div>
+                                </div>
+                                
+                                <a href="{% url 'register' %}" class="border-btn border-btn2">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="properties__card">
+                            <div class="about-icon">
+                                <img src="{% static 'assets/img/icon/price.svg' %}" alt="">
+                            </div>
+                            <div class="properties__caption">
+                                <span class="month">6 month</span>
+                                <p class="mb-25">&#8377 500/month <span>Yoga</span></p>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Home workout</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>No equipments Require</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Good for Heart</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Weight losing classes</p>
+                                    </div>
+                                </div>
+                                
+                                <a href="{% url 'register' %}" class="border-btn border-btn2">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <div class="properties__card">
+                            <div class="about-icon">
+                                <img src="{% static 'assets/img/icon/price.svg' %}" alt="">
+                            </div>
+                            <div class="properties__caption">
+                                <span class="month">6 month</span>
+                                <p class="mb-25">&#8377 500/month <span>Weght Loss</span></p>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Home workout</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>No equipments Require</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Good for Heart</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="{% static 'assets/img/icon/check.svg' %}" alt="">
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>Weight losing classes</p>
+                                    </div>
+                                </div>
+                                
+                                <a href="{% url 'register' %}" class="border-btn border-btn2">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses area End -->
+    <!--? About Area-2 Start -->
+    <section class="about-area2 fix pb-padding pt-50 pb-80">
+        <div class="support-wrapper align-items-center">
+            <div class="right-content2">
+                <!-- img -->
+                <div class="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                    <img src="{% static 'assets/img/gallery/about.png' %}" alt="">
+                </div>
+            </div>
+            <div class="left-content2">
+                <!-- section tittle -->
+                <div class="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="front-text">
+                        <h2 class="">About Me</h2>
+                        <p>You’ll look at graphs and charts in Task One, how to approach the task and the language needed 
+                            for a successful answer. You’ll examine Task Two questions and learn how to plan, write and 
+                        check academic essays.</p>
+                        <p class="mb-40">Task One, how to approach the task and the language needed for a successful answer. You’ll 
+                        examine Task Two questions and learn how to plan, write and check academic essays.</p>
+                        <a href="courses.html" class="border-btn">My Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Area End -->
+    <!--? Blog Area Start -->
+    <!-- Blog Area End -->
+    <!--? video_start -->
+    <!-- video_end -->
+    <!-- ? services-area -->
+    <section class="services-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                        <div class="features-icon">
+                            <img src="{% static 'assets/img/icon/icon1.svg' %}" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Location</h3>
+                            <p>You’ll look at graphs and charts in Task One, how to approach </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/icon2.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Phone</h3>
+                            <p>(90) 277 278 2566</p>
+                            <p>  (78) 267 256 2578</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-services mb-40 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/icon3.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <h3>Email</h3>
+                            <p>jacson767@gmail.com</p>
+                            <p>contact56@zacsion.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    
+{% endblock body %}
+    

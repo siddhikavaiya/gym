@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<main>
+<div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap hero-cap2 pt-70">
+                        <h2>Forget Password</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="cart-box-main">
+        <div class="container">
+            <div class="row new-account-login">
+                <div class="col-sm-6 col-lg-12 mb-3">
+                    <div class="title-left">
+                        <h3 style="color: thistle;">Forget Password</h3>
+                    </div>
+                    <form method='POST'>
+                        {% csrf_token %}
+                        
+                            <div class="form-group col-md-6">
+                                <p style="color: wheat;">Please enter registered Email Id</p>
+                                <label for="email" style="font-size: medium;" name='email'><b>Email</b></label>
+                                <input type="text" style="font-size: medium;" placeholder="Enter Email" name="email" required>
+                            </div>    
+                                <button type="submit" class="btn hvr-hover">send otp</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

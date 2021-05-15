@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  
+
+  
+<main>
+  <!--? Hero Start -->
+  <div class="slider-area2">
+    <div class="slider-height2 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="hero-cap hero-cap2 pt-70">
+              <h2>Exercise</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero End -->
+  <!--? Blog Area Start -->
+  
+  {% for i in data %}
+    
+<section class="blog_area single-post-area section-padding">
+  <div class="container">
+    <div class="row">
+      
+          <img class="img-fluid" src="{{i.image.url}}" alt=""  height="300" width="400">
+        </div>
+      
+        <div class="blog_details">
+          <h2 style="color: #ffffff;">{{i.wname}}</h2>
+    
+          <p class="excert" style="color: #ffffff;">{{i.wdisc}}</p>
+       
+        </div>
+      
+  </div>
+</section>
+{% endfor %}  
+ 
+{% endblock body %}

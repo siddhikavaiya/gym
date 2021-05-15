@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+<main>
+    <!--? Hero Start -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 pt-70">
+                            <h2>MEMBERSHIP</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row new-account-login">
+            <div class="col-sm-6 col-lg-12 mb-3">
+                <div class="title-left">
+                    <h3 style="color: thistle;">Account Login</h3>
+                </div>
+                <form method='POST'>
+                    {% csrf_token %}
+                    {% if error %}
+                    <div class=" text-center alert alert-danger">
+                       <a style="font-size: small;"> {{error}}</a>
+                    </div>
+                    {% endif %}
+                    
+                        <div class="form-group col-md-6">
+                            <label for="InputEmail" style="font-size: medium;" class="mb-0">Email Address</label>
+                            <input type="email" style="font-size: medium;" class="form-control" name="email" placeholder="Enter Email"> </div>
+                        <div class="form-group col-md-6">
+                            <label for="InputPassword" style="font-size: medium;" class="mb-0">Password</label>
+                            <input type="password" style="font-size: medium;" class="form-control" name="password" placeholder="Password"> </div>
+                        <div class="container" >
+                                <span class="psw" style="color:white">Forgot <a href="{% url 'forpass' %}">password?</a></span>
+                            </div>
+                    <button type="submit" class="btn hvr-hover">Login</button>
+                    {% comment %} <button type="submit" class="btn hvr-hover">Logout</button> {% endcomment %}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+{% endblock %}
